@@ -1,0 +1,35 @@
+.step-box {
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+}
+.step {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #999999;
+    margin: 0px 10px;
+    background-color: #76a1b8;
+}
+.box-header {
+    color: white;
+    height: 50px;
+    padding-top: 10px;
+}
+.box-title h3{
+    height: 70px;
+}
+.box-title {
+    justify-content: center;
+    color: #555555;
+    background-color: #e8ebe7;
+    padding: 20px;
+    height: 215px;
+}
+.box-content {
+    justify-content: center;
+    padding: 20px 10px;
+}
+/* .box-content p { */
+    /* color: white; */
+/* } */

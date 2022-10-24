@@ -1,0 +1,12 @@
+<header>
+    <nav>
+        <ul>
+            <li *ngFor="let data of menu">
+                <a appLinkStyle routerLink="{{data.link}}">{{data.pageName}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<router-outlet></router-outlet>
+<footer>
+</footer>
