@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Step } from 'src/app/model/step';
 
-import { StepServiceService } from 'src/app/service/step/step-service.service';
+import { StepService } from 'src/app/service/step/step-service';
 
 @Component({
   selector: 'app-top',
@@ -13,12 +12,12 @@ export class TopComponent implements OnInit {
 
   steps : Step[];
 
-  constructor(private stepService:StepServiceService) {
+  constructor(private stepService:StepService) {
     this.steps = new Array(); 
   }
 
   ngOnInit(): void {
-    this.steps = this.stepService.stepsAll();
+    this.stepService.stepsAll().subscribe(data => this.steps = data);
   }
 }
 
