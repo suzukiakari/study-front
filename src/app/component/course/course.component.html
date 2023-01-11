@@ -1,0 +1,12 @@
+<div class="course-box">
+    <div class="course-category" *ngFor="let courseCategory of courseCategoryList">
+        <div class="box-header"><h2>{{courseCategory.name}}</h2></div>
+        <div class="box-content">
+            <div class="course" *ngFor="let course of courseCategory.courseList">
+                <app-button size="medium" (click)="onButtonClick()" routerLink="#">
+                    {{course.name}}
+                </app-button>
+            </div>
+        </div>
+    </div>
+</div>

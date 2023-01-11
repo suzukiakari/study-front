@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
 import { TopComponent } from './component/top/top.component';
 import { LinkStyleDirective } from './directive/link-style.directive';
 import { LinkStyleBoxDirective } from './directive/link-style-box.directive';
+import { CourseComponent } from './component/course/course.component';
+import { ButtonComponent } from './parts/button/button.component';
 
 const routes:Routes = [
-  { path: '', component: TopComponent }
+  { path: '', component: TopComponent },
+  { path: 'course', component: CourseComponent }
 ]
 
 @NgModule({
@@ -18,7 +21,9 @@ const routes:Routes = [
     AppComponent,
     TopComponent,
     LinkStyleDirective,
-    LinkStyleBoxDirective
+    LinkStyleBoxDirective,
+    CourseComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

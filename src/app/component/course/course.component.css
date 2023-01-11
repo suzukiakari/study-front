@@ -1,0 +1,29 @@
+.course-box {
+    text-align: center;
+    width: 850px;
+    margin: 100px auto 0px auto;
+}
+.course-category {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.box-header {
+    background-color: #76a1b8;
+    color: white;
+    height: 50px;
+    /* width: 300px; */
+    padding: 10px 0px 0px 0px;
+}
+.box-content {
+    background-color: white;
+    border-top: 5px solid #76a1b8;
+    margin: 15px 0px;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.course{
+    margin: 10px;
+    width: 25%;
+}

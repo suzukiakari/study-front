@@ -1,0 +1,23 @@
+button {
+    background-color: #76a1b8;
+    border: 1px solid #76a1b8;
+    color: white;
+}
+button:hover {
+    color: #c9be72;
+}
+.small {
+    padding: 5px 8px;
+    font-size: 0.7rem;
+}
+
+.medium {
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+}
+
+.large {
+    padding: 5px 20px;
+    font-size: 1.5rem;
+}
