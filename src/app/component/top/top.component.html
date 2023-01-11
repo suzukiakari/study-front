@@ -1,6 +1,6 @@
 <div class="step-box">
-    <div class="step" appLinkStyleBox *ngFor="let data of steps">
-        <div class="box-header"><h2><a routerLink="#">ステップ{{data.stepNo}}</a></h2></div>
+    <div class="step" (click)="onButtonClick(data.link)" appLinkStyleBox *ngFor="let data of steps">
+        <div class="box-header"><h2><div>ステップ{{data.stepNo}}</div></h2></div>
         <div class="box-title"><h3>{{data.name}}</h3><img src="assets/img/{{data.icon}}"></div>
         <div class="box-content"><p>{{data.explanation}}</p></div>
     </div>
